@@ -1,0 +1,31 @@
+package P1;
+import java.util.*;
+ 
+public class Natural {
+	 int sum=0;
+	public static void main(String [] args) {
+		 
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter a number:");
+		int n=sc.nextInt();
+		Natural ref=new Natural();
+		int a=ref.sumOfN(n);
+		System.out.println(a);
+		
+	}
+	public int sumOfN(int n) {
+		 
+		 sum=sum+n;
+		if(n>0) {
+				n--;
+				sumOfN(n);	
+		}
+		 
+		return sum;
+		
+		
+	}
+	
+	}
+		 
